@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --background-color: #ffc4c4;
+  --button-color: #fbbf23;
+  --text-color: #333333;
+  --choose-text-color: #666666;
+  --white: #ffffff;
+  --red: #ee4444;
+  --blue: #3c81f6;
+  --black: #000000;
+  --font-family-main: "Roboto";
+  --font-weight-main: 400;
+}
