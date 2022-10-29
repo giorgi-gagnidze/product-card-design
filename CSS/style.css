@@ -1,3 +1,5 @@
+/* Style reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +10,11 @@ html {
   font-size: 62.5%;
 }
 
+/* Used colors */
+
 :root {
   --background-color: #ffc4c4;
+  --card-border: #e7e6eb;
   --button-color: #fbbf23;
   --text-color: #333333;
   --choose-text-color: #666666;
@@ -17,6 +22,157 @@ html {
   --red: #ee4444;
   --blue: #3c81f6;
   --black: #000000;
+  --button-border: #61a5fa;
   --font-family-main: "Roboto";
-  --font-weight-main: 400;
+}
+
+/* Body styling */
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styling */
+
+.main-container {
+  max-width: 40rem;
+  font-family: inherit;
+  font-weight: inherit;
+  background-color: var(--white);
+  border: 1px solid var(--card-border);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  margin: 121px 0;
+}
+
+.main-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.second-container {
+  width: 100%;
+  font-family: inherit;
+  font-weight: inherit;
+  padding: 24px 40px 40px;
+}
+
+/* Text styling */
+
+.price {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  color: var(--text-color);
+  margin-bottom: 1.6rem;
+}
+
+.name {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--text-color);
+  margin-bottom: 2.4rem;
+  height: 7.2rem;
+  overflow: hidden;
+}
+
+.choose-color {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--choose-text-color);
+  margin-bottom: 1.6rem;
+}
+
+/* Color chooser */
+
+.color-container {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.color {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red-bg {
+  background-color: var(--red);
+  border: 4px solid var(--black);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blue-bg {
+  background-color: var(--blue);
+  border: 4px solid var(--white);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.black-bg {
+  background-color: var(--black);
+  border: 4px solid var(--white);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Button styling */
+
+.btn {
+  width: 100%;
+  height: 5.5rem;
+  border: none;
+  font-family: inherit;
+  color: var(--black);
+  font-weight: inherit;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.yellow-btn {
+  background-color: var(--button-color);
+  margin-bottom: 1.6rem;
+}
+
+.white-btn {
+  background-color: var(--white);
+  border: 1px solid var(--button-border);
+  margin-bottom: 3.2rem;
+}
+
+/* Link styling */
+
+.link {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--button-border);
 }
